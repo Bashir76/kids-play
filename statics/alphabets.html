@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/alphabets.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <link 
+     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" 
+     rel="stylesheet"
+    /> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <title>Alphabets</title>
+     <script src="./scripts/alphabets.js" type="text/javascript">
+    </script> 
+     <script src="./scripts/header.js" type="text/javascript">
+    </script>
+</head>
+<body>
+  <header class="topnav" id="myTopnav">
+ <a href="#home" class="active"><img src="https://i.ibb.co/1vCndBr/Kids-kite.png" alt="Kids-kite"></a>
+    <a href="#alphabet">Alphabets Kit</a>
+    <a href="#contact">Animals Kit</a>
+    <a href="#about">Birds Kit</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i onclick="myTab(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </i>
+  </a>  
+</header>
+  <div class="container" id="container">
+  <!--fixs container with images and one sentence of alphabet/-->
+      <div class="fixed">
+       <div id="images" class="img-content">
+        <img id="image" src="https://i.ibb.co/zHPq3k9/alpha.jpg" alt="Alphabets"/>
+      </div>
+        <textarea class="text-center" id="display" readonly> Play with Alphabets
+        </textarea>
+       </div>
+     <div class="content">
+      <div class="text-center grid-container">
+
+       <button class="drum-pad btn-success" id="a" onclick="play('A'), show()">
+        A
+        <audio src="./assets/alphabet/a.mp3" class="clip" id="A">
+       </button>
+       <button class="drum-pad btn-primary" id="b" onclick="play('B')">
+        B
+        <audio src="./assets/alphabet/b.mp3" class="clip" id="W">
+       </button>
+       <button class="drum-pad btn-success" id="c" onclick="play('C')">
+        C
+        <audio src="./assets/alphabet/c.mp3" class="clip" id="C">
+       </button>
+       <button class="drum-pad btn-success" id="d" onclick="play('D')">
+        D
+        <audio src="./assets/alphabet/d.mp3" class="clip" id="D">
+      </button>
+      </div>
+    
+    <div class="text-center grid-container">
+      <button class="drum-pad btn-primary" id="e" onclick="play('E')">
+        E
+        <audio src="./assets/alphabets/e.mp3" class="clip" id="E">
+      </button>
+      <button class="drum-pad btn-success" id="f" onclick="play('F')">
+        F
+        <audio src="./assets/alphabets/f.mp3" class="clip" id="F">
+      </button>
+      <button class="drum-pad btn-info" id="g" onclick="play('G')">
+        G
+        <audio src="./assets/alphabets/g.mp3" class="clip" id="G">
+      </button>
+      <button class="drum-pad btn-primary" id="h" onclick="play('H')">
+        H
+        <audio src="./assets/alphabets/h.mp3" class="clip" id="H">
+      </button>
+      </div>
+      
+    <div class="text-center grid-container">
+      <button class="drum-pad btn-success" id="i" onclick="play('I')">
+        I
+        <audio src="./assets/alphabets/i.mp3" class="clip" id="I">
+      </button>
+      <button class="drum-pad btn-success" id="j" onclick="play('J')">
+        J
+        <audio src="./assets/alphabets/j.mp3" class="clip" id="J">
+      </button>
+      <button class="drum-pad btn-primary" id="k" onclick="play('K')">
+        K
+        <audio src="./assets/alphabets/k.mp3" class="clip" id="K">
+      </button>
+      <button class="drum-pad btn-success" id="l" onclick="play('L')">
+        L
+        <audio src="./assets/alphabets/l.mp3" class="clip" id="L">
+      </button>
+     </div>
+      
+   <div class="text-center grid-container">
+      <button class="drum-pad btn-success" id="m" onclick="play('M')">
+        M
+        <audio src="./assets/alphabets/m.mp3" class="clip" id="M">
+      </button>
+      
+      <button class="drum-pad btn-success" id="n" onclick="play('N')">
+        N
+        <audio src="./assets/alphabets/n.mp3" class="clip" id="N">
+      </button>
+      
+      <button class="drum-pad btn-primary" id="o" onclick="play('O')">
+        O
+        <audio src="./assets/alphabets/o.mp3" class="clip" id="O">
+      </button>
+      <button class="drum-pad btn-success" id="p" onclick="play('P')">
+        P
+        <audio src="./assets/alphabets/p.mp3" class="clip" id="p">
+      </button>
+      </div>
+      
+    <div class="text-center grid-container">
+      <button class="drum-pad btn-success" id="q" onclick="play('Q')">
+        Q
+        <audio src="./assets/alphabets/q.mp3" class="clip" id="Q">
+      </button>
+      
+      <button class="drum-pad btn-success" id="r" onclick="play('R')">
+        R
+        <audio src="./assets/alphabets/r.mp3" class="clip" id="R">
+      </button>
+      <button class="drum-pad btn-primary" id="s" onclick="play('S')">
+        S
+        <audio src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" class="clip" id="S">
+      </button>
+      <button class="drum-pad btn-success" id="t" onclick="play('T')">
+        T
+        <audio src="./assets/alphabets/t.mp3" class="clip" id="T">
+      </button>
+      </div>
+
+      <div class="text-center grid-container">
+      <button class="drum-pad btn-success" id="u" onclick="play('U')">
+        U
+        <audio src="./assets/alphabets/u.mp3" class="clip" id="U">
+      </button>
+      <button class="drum-pad btn-success" id="v" onclick="play('V')">
+        V
+        <audio src="./assets/alphabets/v.mp3" class="clip" id="V">
+      </button>
+      <button class="drum-pad btn-primary" id="w" onclick="play('W')">
+        W
+        <audio src="./assets/alphabets/w.mp3" class="clip" id="W">
+      </button>
+      <button class="drum-pad btn-success" id="x" onclick="play('X')">
+        X
+        <audio src="./assets/alphabets/x.mp3" class="clip" id="X">
+      </button>
+      </div>
+
+      <div class="text-center grid-container">
+      <button class="drum-pad btn-success" id="y" onclick="play('Y')">
+        Y
+        <audio src="./assets/alphabets/y.mp3" class="clip" id="Y">
+      </button>
+      
+      <button class="drum-pad btn-success" id="z" onclick="play('Z')">
+        Z
+        <audio src="./assets/alphabets/z.mp3" class="clip" id="Z">
+      </button>
+      </div>
+    </div>
+  </body>
+</html>
